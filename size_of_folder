@@ -1,0 +1,17 @@
+#! python3
+
+# To calculate the size of file in a folder
+
+
+import os
+
+
+totalSize=0
+
+for fileName in os.listdir("/home/ruhan/Downloads"):
+    if os.path.isfile(os.path.join("/home/ruhan/Downloads",fileName)):
+                      totalSize=totalSize+os.path.getsize(os.path.join("/home/ruhan/Downloads",fileName))
+
+print(totalSize)
+                                                          
+                    
