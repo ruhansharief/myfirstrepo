@@ -8,9 +8,9 @@ import os
 
 totalSize=0
 
-for fileName in os.listdir("/home/ruhan/Downloads"):
-    if os.path.isfile(os.path.join("/home/ruhan/Downloads",fileName)):
-                      totalSize=totalSize+os.path.getsize(os.path.join("/home/ruhan/Downloads",fileName))
+for fileName in os.listdir("/home/<user>/Downloads"):
+    if os.path.isfile(os.path.join("/home/<user>/Downloads",fileName)):
+                      totalSize=totalSize+os.path.getsize(os.path.join("/home/<user>/Downloads",fileName))
 
 print(totalSize)
                                                           
